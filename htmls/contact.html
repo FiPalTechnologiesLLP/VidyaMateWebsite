@@ -1,0 +1,135 @@
+{% extends 'website/layout/base.html' %}
+{% load static %}
+
+{% block content %}
+<main class="main">
+
+    <!-- Page Title -->
+    <div class="page-title" data-aos="fade">
+      <div class="heading">
+        <div class="container">
+          <div class="row d-flex justify-content-center text-center">
+            <div class="col-lg-8">
+              <h1>Contact</h1>
+              <p class="mb-0">Odio et unde deleniti. Deserunt numquam exercitationem. Officiis quo odio sint voluptas consequatur ut a odio voluptatem. Sit dolorum debitis veritatis natus dolores. Quasi ratione sint. Sit quaerat ipsum dolorem.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <nav class="breadcrumbs">
+        <div class="container">
+          <ol>
+            <li><a href="/">Home</a></li>
+            <li class="current">Contact</li>
+          </ol>
+        </div>
+      </nav>
+    </div><!-- End Page Title -->
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+
+      <div class="mb-5" data-aos="fade-up" data-aos-delay="200">
+        <iframe  style="border:0; width: 100%; height: 300px;"  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d238129.63924834025!2d78.90769446056179!3d21.16132625823983!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd4c0a5a31faf13%3A0x19b37d06d0bb3e2b!2sNagpur%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1712816058802!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <!-- <iframe style="border:0; width: 100%; height: 300px;" src="https://maps.app.goo.gl/f6e3iqkD5YTaWQ6v5" frameborder="0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+      </div><!-- End Google Maps -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4 mt-5">
+
+            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
+              <i class="bi bi-envelope flex-shrink-0"></i>
+              <div>
+                <h3>Email Us</h3>
+                <p>contact@vidyanikethan.net</p>
+              </div>
+            </div>
+
+            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+              <i class="bi bi-telephone flex-shrink-0"></i>
+              <div>
+                <h3>Call Us</h3>
+                <p>040-66 050505</p>
+              </div>
+            </div>
+
+            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="500">
+              <i class="bi bi-geo-alt flex-shrink-0"></i>
+              <div>
+                <h3>Address</h3>
+                <p>Plot No : 81, Bhavsar Chowk,<br>
+                  Shri Ayyappa Society, Chandrapur,<br>
+                  Nagpur - 440027,<br>
+                  Maharashtra, INDIA
+                </p>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="col-lg-8">
+            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+              <div class="row gy-3">
+
+                <div class="col-md-6">
+                  <label for="formGroupExampleInput" class="form-label" style="font-size:15px;">Full Name</label>
+                  <input type="text" name="name" class="form-control" style="border-radius:6px; background-color:#F6F7F6;" placeholder="Enter Your Name" required="">
+                </div>
+
+                <div class="col-md-6">
+                  <label for="formGroupExampleInput" class="form-label" style="font-size:15px;">Email Address</label>
+                  <input type="email" class="form-control" name="email" style="border-radius:6px; background-color:#F6F7F6;" placeholder="Enter your email" required="">
+                </div>
+
+                <div class="col-md-6">
+                  <label for="formGroupExampleInput" class="form-label" style="font-size:15px;">Your Mobile Number</label>
+                  <input type="text" class="form-control" name="subject" style="border-radius:6px; background-color:#F6F7F6;" placeholder="Enter your mobile number" required="">
+                </div>
+
+                <div class="col-md-6">
+                  <label for="formGroupExampleInput" class="form-label" style="font-size:15px;">Subject</label>
+                  <input type="text" class="form-control" name="subject" style="border-radius:6px; background-color:#F6F7F6;" placeholder="Enter subject" required="">
+                </div>
+
+                <div class="col-md-12">
+                  <label for="formGroupExampleInput" class="form-label" style="font-size:15px;">Message</label>
+                  <textarea class="form-control" name="message" rows="4" style="border-radius:6px; background-color:#F6F7F6;" placeholder="Write here..." required=""></textarea>
+                </div>
+
+                <div class="col-md-12 text-center">
+                  <button type="submit">Send Message</button>
+                </div>
+
+              </div>
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+ 
+
+
+{% endblock %}
+
+{% block js %}
+<script>
+        
+    $(document).ready(function() {
+       
+        $(".active").removeClass("active");
+        $("#contact").addClass("active");
+        
+        
+        
+    });
+  </script>
+
+{% endblock %}

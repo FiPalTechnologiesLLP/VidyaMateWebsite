@@ -1,0 +1,104 @@
+{% extends 'website/layout/base.html' %}
+{% load static %}
+
+{% block content %}
+<main class="main">
+
+    <!-- Page Title -->
+    <div class="page-title" data-aos="fade">
+      <div class="heading">
+        <div class="container">
+          <div class="row d-flex justify-content-center text-center">
+            <div class="col-lg-8">
+              <h1>Get Started</h1>
+              <p class="mb-0">Odio et unde deleniti. Deserunt numquam exercitationem. Officiis quo odio sint voluptas consequatur ut a odio voluptatem. Sit dolorum debitis veritatis natus dolores. Quasi ratione sint. Sit quaerat ipsum dolorem.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <nav class="breadcrumbs">
+        <div class="container">
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li class="current">Get Started</li>
+          </ol>
+        </div>
+      </nav>
+    </div>
+
+    <!-- About Us Section -->
+    <section id="about-us" class="section about-us">
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-5 offset-lg-1 order-1 order-lg-2" data-aos="fade-up" data-aos-delay="100">
+            <img src="{% static 'vidyamate_website/assets/img/get-started.png' %}" class="img-fluid mt-5" alt="">
+          </div>
+
+          <div class="col-lg-6  order-2 order-lg-1 content" data-aos="fade-up" data-aos-delay="200">
+            <h4>Voluptatem dignissimos provident quasi corporis</h4>
+
+            <form action="forms/contact.php" method="post" class="php-email-form mt-4" data-aos="fade-up" data-aos-delay="200">
+              <div class="row gy-3">
+
+                <div class="col-md-6">
+                  <label for="formGroupExampleInput" class="form-label" style="font-size:15px;">Full Name</label>
+                  <input type="text" name="name" class="form-control" style="font-size:14px; border-radius:6px; background-color:#F6F7F6;" placeholder="Enter Your Name" required="">
+                </div>
+
+                <div class="col-md-6">
+                  <label for="formGroupExampleInput" class="form-label" style="font-size:15px;">Email Address</label>
+                  <input type="email" class="form-control" name="email" style="font-size:14px; border-radius:6px; background-color:#F6F7F6;" placeholder="Enter your email" required="">
+                </div>
+
+                <div class="col-md-6">
+                  <label for="formGroupExampleInput" class="form-label" style="font-size:15px;">Your Mobile Number</label>
+                  <input type="text" class="form-control" name="subject" style="font-size:14px; border-radius:6px; background-color:#F6F7F6;" placeholder="Enter your mobile number" required="">
+                </div>
+
+                <div class="col-md-6">
+                  <label for="formGroupExampleInput" class="form-label" style="font-size:15px;">Subject</label>
+                  <input type="text" class="form-control" name="subject" style="font-size:14px; border-radius:6px; background-color:#F6F7F6;" placeholder="Enter subject" required="">
+                </div>
+
+                <div class="col-md-12">
+                  <label for="formGroupExampleInput" class="form-label" style="font-size:15px;">Message</label>
+                  <textarea class="form-control" name="message" rows="4" style="font-size:14px; border-radius:6px; background-color:#F6F7F6;" placeholder="Write here..." required=""></textarea>
+                </div>
+
+                <div class="col-md-12 text-center">
+                  <button type="submit" style="color: var(--contrast-color); background: #06A3DA; border: 0; padding: 10px 30px 12px 30px; transition: 0.4s; border-radius: 50px;">Send Message</button>
+                </div>
+
+              </div>
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+    
+  </main>
+
+{% endblock %}
+
+
+{% block js %}
+    <script>
+        
+        $(document).ready(function() {
+           
+    		$(".active_header").removeClass("active_header");
+		    $("#about").addClass("active_header");
+			
+			
+            $(".mob-active").removeClass("mob-active");
+		    $("#about_responsive").addClass("mob-active");
+		});
+    </script>
+
+{% endblock %}

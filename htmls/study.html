@@ -1,0 +1,60 @@
+{% extends 'website/layout/base.html' %}
+{% load static %}
+
+{% block content %}
+    <!-- Information -->
+    <div class="container my-4 lexend nav-gap">
+        <h1 class="py-lg-2 py-1 mb-lg-2 mb-1 mt-md-0 mt-3 about-head">Study</h1>
+        <p class="world-details">At Vidyanikethan we are passionate about grooming leaders who are not only through professionals 
+            but also good humans beings with values and sanskars.
+        </p>
+        <div class="col-12 my-lg-3 my-2">
+            <img src="{% static 'website/images/study-bgimg.png' %}" alt="" style="width: 100%;">
+        </div>
+        <p class="world-details">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt labore et dolore magna aliqua. Utenim
+            ad minim veniam, quis nostrud exercitation ullamco labor is nisi ut aliquip ex ea commodo consequat. Duisaute irure dolor in repr
+            ehenderit in voluptate velit esse cillum dolore eu fugiat  nulla pariatur  irure dolor in reprehenderit in volulunter and can be eaqsil.
+        </p>
+    </div>
+
+    <!-- Syndicate Roooms -->
+    <div class="container my-md-5 my-3">
+        <div class="col-12 lexend">
+            <h1 class="about-head">Syndicate Rooms</h1>
+            <h5 class="achiv-title my-lg-4 my-md-3 my-2">Educate your daughters. They will uplift the entire family.</h5>
+        </div>
+        <div class="row my-3">
+            <div class="col-md-6">
+                <img src="{% static 'website/images/syndicate-room-1.png' %}" alt="" class="syndi-card-left">
+                <p class="world-details syndi-card-left mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt labore et dolore magna aliqua. Utenim
+                    ad minim veniam, quis nostrud exercitation ullamco labor is nisi ut aliquip ex ea commodo consequat. Duisaute irure dolor in repr
+                    ehenderit in voluptate velit esse cillum dolore eu fugiat  nulla pariatur  irure dolor in reprehenderit in volulunter and can be eaqsil.
+                </p>
+            </div>
+            <div class="col-md-6 mt-md-0 mt-3">
+                <img src="{% static 'website/images/syndicate-room-2.png' %}" alt="" class="syndi-card-right">
+                <p class="world-details syndi-card-right mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt labore et dolore magna aliqua. Utenim
+                    ad minim veniam, quis nostrud exercitation ullamco labor is nisi ut aliquip ex ea commodo consequat. Duisaute irure dolor in repr
+                    ehenderit in voluptate velit esse cillum dolore eu fugiat  nulla pariatur  irure dolor in reprehenderit in volulunter and can be eaqsil.
+                </p>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
+
+{% block js %}
+    <script>
+        
+        $(document).ready(function() {
+           
+    		$(".active_header").removeClass("active_header");
+		    $("#study").addClass("active_header");
+
+			$(".mob-active").removeClass("mob-active");
+		    $("#study_responsive").addClass("mob-active");
+			
+		});
+    </script>
+
+{% endblock %}
